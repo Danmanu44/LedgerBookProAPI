@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Items extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'description',
+        'type',
+        'category',
+        'unit',
+        'suspend_status'
+
+    ];
 }
